@@ -1,6 +1,6 @@
-setlocal indentexpr=KdlIndent()
+setlocal indentexpr=JslIndent()
 
-function! KdlIndent(...)
+function! JslIndent(...)
   let line = getline(v:lnum)
   let previousNum = prevnonblank(v:lnum - 1)
   let previous = getline(previousNum)
